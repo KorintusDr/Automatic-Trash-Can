@@ -2,11 +2,9 @@
 
 const int trigPin = 9;
 const int echoPin = 10;
-
 const int servoPin = 6;
 
 Servo myServo;
-
 long duration;
 float distanceCm;
 
@@ -16,7 +14,7 @@ void setup() {
   pinMode(echoPin, INPUT); 
   
   myServo.attach(servoPin); 
-  myServo.write(0); // Awal servo tertutup
+  myServo.write(0); 
 }
 
 void loop() {
@@ -24,18 +22,14 @@ void loop() {
   digitalWrite(trigPin, LOW);
   delayMicroseconds(2);
 
-  // Kirim pulsa 10µs ke trigPin
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
 
-  // Baca durasi pulsa echo
   duration = pulseIn(echoPin, HIGH);
 
-  // Hitung jarak 
   distanceCm = duration * 0.034 / 2;
 
-  // Tampilkan hasil
   Serial.print("Jarak: ");
   Serial.print(distanceCm);
   Serial.println(" cm");
