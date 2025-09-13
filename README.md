@@ -18,7 +18,7 @@ Proyek ini dirancang untuk menghadirkan solusi **higienis** dan **tanpa sentuhan
 ## 🛠️ Components
 - **Arduino UNO** (atau board kompatibel)  
 - **HC-SR04 Ultrasonic Sensor**  
-- **Servo Motor (SG90/MG90S)**  
+- **Servo Motor SG90**  
 - Breadboard & jumper wires  
 - Tempat sampah mini untuk prototipe  
 
@@ -56,7 +56,3 @@ Pastikan servo mendapat suplai daya yang stabil dari Arduino.
 
 ---
 
-## 📷 Demo
-Tambahkan foto atau video prototipe di sini:  
-```markdown
-![Demo](images/demo.gif)
